@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernardo Vergara - Estudante de Psicologia & Pesquisador em Saúde</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #930dad;
-            color: #fff;
-            padding: 40px 0 20px 0;
-            text-align: center;
-        }
-        main {
-            max-width: 800px;
-            margin: 30px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        h1 {
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #930dad;
-            margin-top: 30px;
-        }
-        .contact {
-            margin-top: 30px;
-            background: #eaf4fb;
-            padding: 15px;
-            border-radius: 6px;
-        }
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bernardo de Oliveira Vergara</title>
+<meta name="description" content="Bernardo de Oliveira Vergara: estudante de Psicologia (UFR), clínica lacaniana e ciência de dados aplicada à saúde pública.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#edf0f3; --ink:#14202b; --muted:#556270; --line:#cdd5dc; --accent:#8c2f39;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10171e; --ink:#e7ecf0; --muted:#98a6b3; --line:#2a3744; --accent:#e08a93;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:48px 24px 72px;display:grid;grid-template-columns:280px 1fr;gap:56px}
+aside{position:sticky;top:48px;align-self:start}
+h1{font:600 clamp(2.4rem,5vw,3.4rem)/1.05 var(--serif);letter-spacing:-.02em;margin:0 0 16px}
+.ids{display:flex;gap:12px;margin:0 0 28px}
+.ids a{display:block;line-height:0;border-radius:50%}
+.ids svg{display:block;transition:transform .15s}
+.ids a:hover svg{transform:scale(1.08)}
+.ids a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+nav{display:flex;flex-direction:column;gap:6px;font-size:.92rem}
+nav a{color:var(--ink);text-decoration:none;padding:2px 0}
+nav a:hover{color:var(--accent)}
+main section{padding:0 0 40px;margin:0 0 40px;border-bottom:1px solid var(--line)}
+main section:last-child{border-bottom:0;margin-bottom:0}
+h2{font:600 1.7rem/1.2 var(--serif);margin:0 0 20px}
+p{margin:0 0 14px;max-width:68ch}
+.lead{font:400 1.3rem/1.5 var(--serif);max-width:60ch;margin:0}
+.item{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:14px 0}
+.item + .item{border-top:1px solid var(--line)}
+.when{color:var(--muted);font-size:.88rem;padding-top:3px}
+.item h3{font:600 1.08rem/1.35 var(--serif);margin:0 0 2px}
+.item p{margin:0;color:var(--muted);font-size:.95rem}
+.tag{display:inline-block;font-size:.78rem;font-weight:500;color:var(--accent);border:1px solid var(--accent);border-radius:99px;padding:0 9px;margin-left:6px;vertical-align:2px}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:32px;padding-top:32px}
+  aside{position:static}
+  nav{flex-direction:row;flex-wrap:wrap;gap:6px 16px}
+  .item{grid-template-columns:1fr;gap:2px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  .wrap{display:block;padding:0}
+  nav{display:none}
+  aside{position:static;margin-bottom:24px}
+}
+</style>
 </head>
 <body>
-    <header>
-        <img src="https://avatars.githubusercontent.com/u/58376937?v=4" alt="Foto de perfil" class="profile-img">
-        <h1>Bernardo Vergara</h1>
-        <p>Estudante de Psicologia & Pesquisador em Saúde</p>
-    </header>
-    <main>
-        <section>
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou estudante de Psicologia com interesse em pesquisa na área de saúde. Tenho experiência em projetos acadêmicos, revisão de literatura e participações em extensões universitárias.
-            </p>
-        </section>
-        <section>
-            <h2>Áreas de Interesse</h2>
-            <ul>
-                <li>Psicologia e Psicanálise</li>
-                <li>Pesquisa em Saúde</li>
-                <li>Análise de Dados em Saúde</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Experiência Acadêmica</h2>
-            <ul>
-                <li>Participação em projetos de pesquisa na área de saúde</li>
-                <li>Apresentação de trabalhos em eventos acadêmicos</li>
-                <li>Colaboração em grupos de estudo e extensão universitária</li>
-            </ul>
-        </section>
-        <section class="contact">
-            <h2>Contato</h2>
-            <p>
-                <a href="https://br.linkedin.com/in/bernardo-vergara" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width:20px; vertical-align:middle; margin-right:5px;">
-                    LinkedIn
-                </a> 
-                <br>
-                <a href="https://lattes.cnpq.br/8571034082445298" target="_blank">
-                    <img src="https://www.gov.br/observatorio/pt-br/assuntos/programas-academicos/imagens/Lattes.png/@@images/image" alt="Lattes" style="width:20px; vertical-align:middle; margin-right:5px;">
-                    Lattes
-                </a> 
-            </p>
-        </section>
-    </main>
+<div class="wrap">
+  <aside>
+    <h1>Bernardo de Oliveira Vergara</h1>
+    <p class="ids">
+      <a href="http://lattes.cnpq.br/8571034082445298" aria-label="Currículo Lattes" title="Currículo Lattes"><svg viewBox="0 0 32 32" width="32" height="32" role="img" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#1d4f91"/><text x="16" y="22.5" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="19" fill="#fff">L</text></svg></a>
+      <a href="https://orcid.org/0009-0005-9636-2974" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 32 32" width="32" height="32" role="img" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#a6ce39"/><text x="16" y="21" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#fff">iD</text></svg></a>
+    </p>
+    <nav aria-label="Seções">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#producoes">Produções</a>
+      <a href="#premios">Prêmios</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p class="lead">Estudante de Bacharelado em Psicologia na UFR. Uso ciência de dados para transformar dados de saúde pública em informação acionável: análises reprodutíveis em R, estatística espaço-temporal, dashboards e boletins epidemiológicos, com foco em saúde mental e vigilância no SUS.</p>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="item"><div class="when">2026 – atual</div><div><h3>Desenvolvimento participativo de dashboards para apoio à gestão em saúde mental <span class="tag">pesquisa</span></h3><p>Pesquisa de Action Design Research no Centro de Atenção Psicossocial Infantojuvenil (CAPSij) de Rondonópolis-MT. O problema de partida é a dificuldade de gestores em transformar dados assistenciais e administrativos em informação útil para planejamento, monitoramento e tomada de decisão. O estudo combina design participativo, adoção tecnológica e letramento em dados, em quatro etapas ao longo de doze meses: diagnóstico participativo, mapeamento e qualificação dos dados, prototipagem iterativa e implementação piloto, com avaliação de utilidade, usabilidade e adoção. O resultado esperado é um dashboard reprodutível e princípios de design transferíveis a contextos semelhantes. Coordenação: Djalma Adão Barbosa Junior.</p></div></div>
+      <div class="item"><div class="when">2025 – 2026</div><div><h3>Análise espaço-temporal das doenças tropicais negligenciadas em Mato Grosso <span class="tag">pesquisa</span></h3><p>Vários municípios de Mato Grosso vivem situação de emergência em saúde pública por causa de dengue, zika e chikungunya, mas poucos estudos descrevem a dinâmica temporal e espacial dessas doenças no estado. O projeto descreve a tendência temporal e o padrão espacial da mortalidade associada a elas entre 2010 e 2024, com dados do Datasus, IBGE e IPEA. As mudanças de tendência foram analisadas por regressão joinpoint e a autocorrelação espacial pela estatística I de Moran, o que permite identificar os municípios de maior e menor incidência. Uma análise de regressão testa a associação entre a incidência e o índice de vulnerabilidade social. Coordenação: Djalma Adão Barbosa Junior.</p></div></div>
+      <div class="item"><div class="when">2025 – atual</div><div><h3>Saúde Data Science <span class="tag">extensão</span></h3><p>Segunda edição do projeto Cerrado Data Science, com recorte na saúde e alinhada ao ODS 3. Diante da emergência em saúde pública por arboviroses em Rondonópolis, elabora boletins epidemiológicos sobre doenças tropicais negligenciadas em parceria com o Departamento de Vigilância Epidemiológica do município. Também capacita a equipe municipal, com protagonismo dos estudantes, para que a prefeitura passe a produzir seus próprios boletins com ferramentas de ciência de dados.</p></div></div>
+      <div class="item"><div class="when">2024 – 2025</div><div><h3>Cerrado Data Science <span class="tag">extensão</span></h3><p>Projeto que leva produtos de dados, como relatórios automatizados, dashboards e aplicativos web interativos, a organizações públicas e privadas com pouca chance de acessar esses serviços por restrição orçamentária ou falta de profissionais. Para os estudantes, é uma oportunidade de trabalhar em uma equipe de ciência de dados, conhecer a prática gerencial de empresas, ONGs e prefeituras e mobilizar o que aprendem na graduação. Entre os produtos está o Preço Cesta Básica Web, apresentado na 6ª FECITI e na IV Mostra de Extensão da UFR.</p></div></div>
+      <div class="item"><div class="when">2023 – 2024</div><div><h3>CoNexos/LABmais <span class="tag">extensão</span></h3><p>Continuação do podcast CoNexos, criado em 2020 para discutir o uso de linguagens artísticas no ambiente escolar. Nesta edição, o projeto se voltou à formação em mídias digitais em parceria com o Laboratório Sesc de Artes, Mídias, Tecnologias e Juventudes (LABmais), em Rondonópolis. Ofereceu à comunidade acadêmica e à população oficinas de design gráfico (16 h), produção de podcasts (8 h) e produção audiovisual (24 h), com os materiais publicados no site do projeto e uma mostra final dos produtos audiovisuais.</p></div></div>
+    </section>
+
+    <section id="producoes">
+      <h2>Produções</h2>
+      <div class="item"><div class="when">Apresentação · 2026</div><div><h3><a href="https://bernardovergara.github.io/apresentacao-epidemiologia-s-/#/title-slide">Gráficos Epidemiologia sobre Suicídio</a></h3><p>Apresentação de gráficos epidemiológicos sobre suicídio, preparada para as Aulas abertas sobre suicídio: perspectivas da sociologia, da epidemiologia e da psicanálise, realizadas pelo curso de Psicologia do ICHS na UFR em 2026.</p></div></div>
+      <div class="item"><div class="when">Pesquisa</div><div><h3><a href="https://bernardovergara.github.io/IC-Completitude-Dados-Sinan-Arboviroses-MT/">Completitude dos dados do Sinan sobre arboviroses em Mato Grosso</a></h3><p>Resultados da Iniciação Científica vinculada ao projeto Análise espaço-temporal das doenças tropicais negligenciadas em Mato Grosso. O trabalho avalia a completitude dos campos escolaridade, raça/cor, gestante, sexo e idade nas fichas de notificação do Sinan, classificada pelo escore de Romero e Cunha (2006, 2007), para apontar a qualidade dos dados de arboviroses no estado.</p></div></div>
+    </section>
+
+    <section id="premios">
+      <h2>Prêmios</h2>
+      <div class="item"><div class="when">2025</div><div><h3>Destaque em Extensão Prof. Dr. Benjamin Cristobal Mardine Acuña</h3><p>Diálogos na Ciência de Dados · Pró-Reitoria de Extensão da UFR</p></div></div>
+      <div class="item"><div class="when">2024</div><div><h3>2º lugar como Melhor Trabalho, Ciência de Dados na Extensão</h3><p>Faculdade de Ciências Aplicadas e Políticas / UFR</p></div></div>
+    </section>
+  </main>
+</div>
 </body>
 </html>
